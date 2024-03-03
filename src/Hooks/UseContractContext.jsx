@@ -7,9 +7,10 @@ export const UseContractContext = () => {
 }
 
 export const ContractProvider = ({ children }) => {
-    const [contract, setContract] = useState(null)
+    const [department, setDepartment] = useState(null)
+    const [address, setAddress] = useState(null)
     return(
-        <ContractContext.Provider value={{contract, setContract}}>
+        <ContractContext.Provider value={{department, address, setDepartment, setAddress}}>
             { children }
         </ContractContext.Provider>
     )

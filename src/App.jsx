@@ -1,7 +1,7 @@
 // App.js
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Login, Dashboard, AddAdmin } from './Pages';
+import { Login, Dashboard, AddAdmin, AddDepartment, Department } from './Pages';
 import { ForgotPassword, ResetPassword, Sidebar } from './Components';
 import PrivateRoute from './routing/PrivateRoute';
 import { ContractProvider } from './Hooks/UseContractContext';
@@ -23,6 +23,8 @@ const App = () => {
                   <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/addadmin" element={<AddAdmin />} />
+                    <Route path='/adddepartment' element={<AddDepartment/>} />
+                    <Route path='/department/:departmentAddress' element={<Department/>} />
                   </Routes>
                 </>
               </ContractProvider>

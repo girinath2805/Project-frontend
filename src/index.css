@@ -10,11 +10,13 @@ body {
   height: 100vh;
   margin: 0;
   background: #ededf1;
-  overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-image: url(./assets/background.jpg);
-  background-size: cover;
-  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the wrapper to 100% of the viewport height */
 }
